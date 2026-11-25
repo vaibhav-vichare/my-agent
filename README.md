@@ -1,8 +1,10 @@
-# Agent Template Pack: Weekly Status Report Agent
+# Agent Template Pack: Frontend code advisory Agent
 
 The starter for **Zero to Live AI Agent on Cloud** (Future Proof India).
 
-A delivery manager pastes a week of rough team notes (stand-ups, Jira lines, emails). The agent sorts every note, gives an overall Red / Amber / Green status, builds a risk and blocker register with owners and dates, checks its own work against three checks, fixes it, and lists the questions to ask the team. You will change it into your own agent on Day 2 and put it online on Day 3. It runs straight away in **demo mode**, with no AI key.
+A Senior Architect review TypeScript and Angular frontend
+code for clean architecture, separation of concerns, and codebase health, turning actual source code and
+repository structures into an insightful one-page code health and architecture report. You will change it into your own agent on Day 2 and put it online on Day 3. It runs straight away in **demo mode**, with no AI key.
 
 ## Day 2: run it on your computer
 

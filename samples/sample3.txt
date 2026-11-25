@@ -1,0 +1,13 @@
+Git Repository: https://github.com/retail-hub/ecom-storefront.git
+Branch: feat/ng21-messy-checkout
+
+- Mon: Priya migratd checkout module to angular 21 standalone, zonless chang detection enabled but some old ngModules still hangin around
+- Mon: build time is much fastr down to 14s with esbuild builder
+- Tue: Arjun fxd 12 broken unit tsts in payment flow, now 88 of 92 pass
+- Tue: waitng on security aproval for payment token bridge SEC-881 Meera to follow up
+- Wed: bundle siz is way to big 5.4MB vendor chunk coz of lodash-es and momentjs still in dependencies.. might delay 18 Dec launch
+- Wed: cart icon badge signal not syncng with checkout state, race condishun when user clicks fast
+- Thu: Ravi stuck on server-side rendring hydraton mismatch error NG0500 in CartSummaryComponent cant reproduc locally
+- Thu: crtical XSS bug found in legacy product description v-html renderer CVE-2026-901 blocking prod deploy
+- Fri: next week plan to extrct checkout review step into @defer block
+- Fri: no ownr assgnd for the 3.2s mobile slowdwn on product page

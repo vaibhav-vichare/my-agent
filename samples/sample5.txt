@@ -1,0 +1,11 @@
+Git Repository: https://github.com/fintech-corp/customer-kyc-app.git
+Branch: 
+
+- Highlights: Onboarding wizard converted to Angular 21 standalone component architecture
+- Highlights: Replaced template-driven forms with typed signal forms and validation pipeline
+- Code Health: Document preview component refactored to use @defer (on immediate)
+- Risks: Heavy memory consumption observed during multi-page PDF upload with no owner assigned
+- Risks: Unit test coverage dropped to 48% after Angular 21 upgrade, with multiple disabled test suites and no timeline set
+- Blockers: Production deployment blocked by failing CI pipeline due to missing environment secrets
+- Blockers: Critical memory leak in camera capture stream on mobile browsers causes crash after 3 document scans
+- Next Steps: Next week plan to clean up legacy pipes and add error boundaries

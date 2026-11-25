@@ -1,0 +1,13 @@
+Git Repository: https://github.com/enterprise-bank/wealth-portal-angular.git
+Branch: feature/angular-21-zoneless-migration
+
+- Highlights: Successfully migrated 32 standalone components to zoneless change detection using provideZonelessChangeDetection(), shaving 38 KB from initial main bundle
+- Highlights: Replaced legacy @Input() and @Output() decorators across 16 shared UI widgets with Angular 21 signal inputs input() and output(), verified by Priya
+- Code Health: Converted legacy RxJS-heavy account summary table to computed() signals and resource API, reducing subscription leaks and eliminating 240 lines of boilerplate
+- Code Health: Adopted new control flow syntax (@if, @for, @let) across 45 templates with zero runtime regressions in automated E2E tests
+- Risks: TradeExecutionComponent.ts is 1420 lines long with tightly coupled charting logic and WebWorker communications; Arjun to refactor by 18 Dec
+- Risks: Initial load time on 4G is 4.6s due to unoptimized 3.8 MB vendor bundle containing legacy chart.js dependencies
+- Blockers: Memory leak detected in real-time portfolio streaming service using SSE after 20 minutes of continuous trading; Ravi investigating
+- Blockers: Critical build failure on CI in SEC-301 security scan due to high-severity prototype pollution CVE-2026-419 in outdated pdf-viewer library, Meera to resolve
+- Next Steps: Next week implement deferrable views (@defer (on viewport)) for transaction history tables to reduce initial DOM footprint
+- Next Steps: Next week schedule architecture review on migrating legacy NgModule shared module into domain-driven sub-entry points

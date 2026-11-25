@@ -1,0 +1,8 @@
+Git Repository: https://github.com/telecom-saas/admin-console.git
+Branch: main
+
+- Highlights: Upgraded admin console to Angular 21 with zoneless change detection and strict TypeScript 5.8 mode
+- Code Health: 100% standalone components across all 15 feature modules with signals-based state
+- Risks: UserTableComponent bundle size is 2.8 MB; Priya to optimize by 15 Dec
+- Blockers: Production build fails on CI with circular dependency error in AuthInterceptor; Ravi investigating
+- Next Steps: Next week implement @defer (on idle) for analytics charts
